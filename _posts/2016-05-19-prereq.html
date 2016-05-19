@@ -12,9 +12,13 @@ permalink: /default-presentation/
 # 预先学习
 了解和使用以下各种工具，然后做PPT给大家讲解，尽量简短。
 
-学习思路：
+学习思路（[大图](http://knsv.github.io/mermaid/live_editor/#/view/Z3JhcGggTFIKCiAgICBzdWJncmFwaCDln7rmnKzlt6XlhbcKICAgICAgICBzdGFydCgiZmE6ZmEtY2lyY2xlIOW8gOWniyIpIC0tPiBwYXNzd29yZCgiZmE6ZmEta2V5IGxhc3RwYXNzIikKICAgICAgICBwYXNzd29yZCAtLT4gZXZlcm5vdGUo5Y2w6LGhPGJyPueslOiusDxicj4pCiAgICAgICAgZXZlcm5vdGUgLS0-IGNoZWNrQmFzZQogICAgICAgIGNoZWNrQmFzZXsi5bey57uP5LqG6KejIDxici8-IOeslOiusOWKn-iDve-8nyJ9ID09IOaYryA9PT4gZXhjZWwoIkV4Y2VsIE9ubGluZSIpCiAgICAgICAgY2hlY2tCYXNlIC0tIOWQpiAtLT4gZXZlcm5vdGUgICAgICAgCiAgICBlbmQKICAgIHBhc3N3b3JkIC0uLT4gcmVhZEZ1cnRoZXIKICAgIGV2ZXJub3RlIC0uLT4gcmVhZEZ1cnRoZXIgCiAgICBleGNlbCAtLT4gZ2l0b3NjCiAgICBleGNlbCAtLi0-IHRoaW5rCiAgICAKCiAgICBzdWJncmFwaCDniYjmnKznrqHnkIYKICAgICAgICBnaXRvc2MoImZhOmZhLWdpdCDkuobop6NnaXTkuI5naXRvc2MiKSAtLT4gZm9yaygiZmE6ZmEtY29kZS1mb3JrIOWfuuacrOeahFB1c2gmUHVsbCIpCiAgICAgICAgZ2l0b3NjIC0tPiBnaXRodWIoImZhOmZhLWdpdGh1YiDms6jlhozkvb_nlKhHaXRodWIiKQoKCiAgICBlbmQKICAgIGdpdG9zYyAtLi0-IHJlYWRGdXJ0aGVyCiAgICBnaXRodWIgLS4tPiByZWFkRnVydGhlcgoKCiAgICBzdWJncmFwaCDliIbkuqvlkozkv6Hmga8KICAgICAgICBub3RlKCJmYTpmYS1zdGlja3ktbm90ZS1vIOS9v-eUqOWNsOixoeeslOiusOWBmueslOiusCIpCiAgICAgICAgaG9zdHMgLS0-IExhbnRlcm4KICAgICAgICBMYW50ZXJuIC0tPiBWUE4KICAgICAgICBWUE4gLS0-IEdvb2dsZQogICAgICAgIExhbnRlcm4gLS0-IGdkb2NzKCJHb29nbGUgRG9jcyIpCiAgICAgICAgV294CiAgICAgICAgV29sZnJhbQogICAgICAgIFN0YWNrb3ZlcmZsb3cKICAgIGVuZAogICAgbm90ZSAtLi0-IGV2ZXJub3RlCgogICAgJSUgaW5lcm1lZGlhdGUgdGhpbmdzCiAgICByZWFkRnVydGhlcijpmIXor7tQUFTkuK3liJflh7rnmoQ8YnI-5ouT5bGV6ZiF6K-75p2Q5paZKSAKICAgIHJlYWRGdXJ0aGVyIC0tPiB0aGluayjmgJ3ogIPnm7jlhbPlupTnlKgpCgogICAgJSUgU3R5bGUKICAgICBjbGFzc0RlZiBncmVlbiBmaWxsOiM5ZjYsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweDsKICAgICBjbGFzc0RlZiBvcmFuZ2UgZmlsbDojZjk2LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHg7CiAgICAgY2xhc3MgdGhpbmssc3EsZSBncmVlbgogICAgIGNsYXNzIHN0YXJ0LHJlYWRGdXJ0aGVyLGNoZWNrQmFzZSBvcmFuZ2U)）：
 
+![roadmap]({{ site.github.url }}/assets/img/20160519/roadmap.svg)
+
+???
 .mermaid[graph LR
+
     subgraph 基本工具
         start("fa:fa-circle 开始") --> password("fa:fa-key lastpass")
         password --> evernote(印象<br>笔记<br>)
@@ -26,12 +30,18 @@ permalink: /default-presentation/
     evernote -.-> readFurther 
     excel --> gitosc
     excel -.-> think
+    
+
     subgraph 版本管理
         gitosc("fa:fa-git 了解git与gitosc") --> fork("fa:fa-code-fork 基本的Push&Pull")
         gitosc --> github("fa:fa-github 注册使用Github")
+
+
     end
     gitosc -.-> readFurther
     github -.-> readFurther
+
+
     subgraph 分享和信息
         note("fa:fa-sticky-note-o 使用印象笔记做笔记")
         hosts --> Lantern
@@ -43,9 +53,11 @@ permalink: /default-presentation/
         Stackoverflow
     end
     note -.-> evernote
+
     %% inermediate things
     readFurther(阅读PPT中列出的<br>拓展阅读材料) 
     readFurther --> think(思考相关应用)
+
     %% Style
      classDef green fill:#9f6,stroke:#333,stroke-width:2px;
      classDef orange fill:#f96,stroke:#333,stroke-width:4px;

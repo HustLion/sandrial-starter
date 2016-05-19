@@ -15,7 +15,6 @@ permalink: /default-presentation/
 学习思路：
 
 .mermaid[graph LR
-
     subgraph 基本工具
         start("fa:fa-circle 开始") --> password("fa:fa-key lastpass")
         password --> evernote(印象<br>笔记<br>)
@@ -27,18 +26,12 @@ permalink: /default-presentation/
     evernote -.-> readFurther 
     excel --> gitosc
     excel -.-> think
-    
-
     subgraph 版本管理
         gitosc("fa:fa-git 了解git与gitosc") --> fork("fa:fa-code-fork 基本的Push&Pull")
         gitosc --> github("fa:fa-github 注册使用Github")
-
-
     end
     gitosc -.-> readFurther
     github -.-> readFurther
-
-
     subgraph 分享和信息
         note("fa:fa-sticky-note-o 使用印象笔记做笔记")
         hosts --> Lantern
@@ -50,11 +43,9 @@ permalink: /default-presentation/
         Stackoverflow
     end
     note -.-> evernote
-
     %% inermediate things
     readFurther(阅读PPT中列出的<br>拓展阅读材料) 
     readFurther --> think(思考相关应用)
-
     %% Style
      classDef green fill:#9f6,stroke:#333,stroke-width:2px;
      classDef orange fill:#f96,stroke:#333,stroke-width:4px;

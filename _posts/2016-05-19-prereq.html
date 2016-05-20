@@ -118,6 +118,55 @@ graph LR
 * [git@oschina使用入门（图形界面版）](http://my.oschina.net/kymjs/blog/188707)
 * [git@osc(git)中team开发、fork和pull request的用法](http://www.07net01.com/blog/git_osc_git_zhongteamkaifa_forkhepull_requestdeyongfa_552830_1375698352.html)
 
+## 常用Git命令流程
+1. 首次使用时init->push:
+
+```shell
+# 首先初始化
+git init
+# 然后设置远程仓库
+git remote add origin 
+
+# 然后进行修改
+touch index.html
+# 然后加入修改，最简单的是所有修改都加入，运行以下命令：
+git add --all
+# 然后commit, -m后的引号内的内容可以自己修改
+git commit -m "first commit"
+# 然后提交
+git push origin master
+```
+
+---
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home"><a href="http://i.imgur.com/Xb736us.png"><img src="http://i.imgur.com/Xb736us.png"/></a></div>
+    <div role="tabpanel" class="tab-pane" id="profile"><img src="http://i.imgur.com/Xb736us.png"/></div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
+
+</div>
+
+
+
+---
+2. 远程已有clone->push:
+
+---
+3. pull发现冲突git merge --no-ff
+
 ---
 
 ## Github

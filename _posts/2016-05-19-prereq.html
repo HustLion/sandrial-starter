@@ -124,13 +124,16 @@ graph LR
 1. 首次使用时init->push:
 
 ```shell
-# 首先初始化
+# 初始化
 git init
-# 然后设置远程仓库
-git remote add origin 
+# 设置远程仓库。用https的地址时要输入账号密码，
+# 用SSH则是进行一些配置后可以免去输入账号密码的过程
+# 地址示例： https://git.oschina.net/domicor/demo.git
+git remote add origin "这里面填你的git地址"
 
 # 然后进行修改
-touch index.html
+# 此处用touch新建一个名为README.md的文件
+touch README.md
 # 然后加入修改，最简单的是所有修改都加入，运行以下命令：
 git add --all
 # 然后commit, -m后的引号内的内容可以自己修改
@@ -140,7 +143,7 @@ git push origin master
 ```
 
 ---
-
+### 首次使用-演示
 <div>
 
   <!-- Nav tabs -->
@@ -181,13 +184,14 @@ git push origin master
 
 ## 信息
 ### Hosts
+
+Hosts就是避开DNS服务器，直接访问域名对应的IP地址。因为Hosts内就是存储域名与IP的对应关系。这样可以解开多数被封网站。但是Youtube等网站因DNS污染太严重，可登陆但是不可观看。针对此情况应使用VPN。Youtube除了娱乐，也会有一些质量很好的教程，是很重要的第一手信息来源。
+
 * [Hosts设置教程-老D博客](http://laod.cn/hosts/2016-google-hosts.html#rd)
 * [Hosts文件可靠来源](https://github.com/racaljk/hosts)
 
 ### Lantern
-[Lantern项目主页](https://github.com/getlantern/lantern)。Lantern只是HTTP/HTTPS代理，可以解开多数被封网站。但是Youtube等网站因DNS污染太严重，可登陆但是不可观看。
-
-针对此情况应使用VPN。Youtube除了娱乐，也会有一些质量很好的教程，是很重要的第一手信息来源。
+[Lantern项目主页](https://github.com/getlantern/lantern)。Lantern是HTTP/HTTPS代理，设置后可以正常观看Youtube，以及访问大多数被封网站。
 
 ---
 

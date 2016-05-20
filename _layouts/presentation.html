@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    {% include head.html %}
     <meta charset="utf-8">
     <title>{{ page.title | strip_html }}</title>
     <style>
@@ -17,6 +18,7 @@
     </style>
   </head>
   <body>
+    {% include header.html %}
     <textarea id="source">
       {{ content }}
     </textarea>
@@ -45,5 +47,8 @@
     <script src="{{ site.github.url }}/js/mermaid.min.js"></script>
     <link rel="stylesheet" href="{{ site.github.url }}/css/mermaid.css">
     <script>mermaid.initialize({startOnLoad:true});</script>
+
+
+    {% include footer.html %}
   </body>
 </html>

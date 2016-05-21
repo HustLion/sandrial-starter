@@ -16,7 +16,10 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  HustLion
 
 # disqus
-disqus_shortname: sandrialtraining
-disqus_url: "http://hustlion.github.io/sandrial-starter"
+# disqus_shortname: sandrialtraining
+# disqus_url: "http://hustlion.github.io/sandrial-starter"
+# use duoshuo for this Chinese site
+duoshuo_shortname: sandrialtraining
+duoshuo_url: "http://hustlion.github.io/sandrial-starter"
 # Build settings
 markdown: kramdown

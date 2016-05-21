@@ -15,5 +15,8 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 github_username:  HustLion
 
+# disqus
+disqus_shortname: sandrialtraining
+disqus_url: "http://hustlion.github.io/sandrial-starter"
 # Build settings
 markdown: kramdown
